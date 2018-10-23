@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Skilledup</string>
+    <string-array name="searchFilter">
+        <item>Education</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="sports_array">
+        <item>Country</item>
+        <item>Tennis</item>
+        <item>FootBall</item>
+        <item>Basket Ball</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Hockey</item>
+    </string-array>
+
+    <string-array name="city_array">
+        <item>City</item>
+        <item>Tennis</item>
+        <item>FootBall</item>
+        <item>Basket Ball</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Hockey</item>
+    </string-array>
+
+<string name="about">"This is a dummy text don't read below dfsdf dfsdf df sdf sdfsdf sdfsdf sddfs df sdfs dfsd fs "</string>
+</resources>

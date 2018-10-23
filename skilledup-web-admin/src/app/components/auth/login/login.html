@@ -1,0 +1,88 @@
+<div ng-controller="LoginController" layout="column" ng-cloak>
+    <div class="logincontainer">
+        <div id="login">
+        <div id="infosuccess" hidden>
+              <span class="label label-success"> Successfully</span>
+             </div>
+             <div id="infofail" hidden>
+             <span class="label label-warning"> Please Fill Out The Form Again!!!</span>
+             </div>
+            <form name="projectForm">
+                <fieldset class="clearfix">
+                    <p><span><md-icon md-menu-origin class="class=material-icons redish">account_circle</md-icon></span><input required type="text" name="email" ng-model="$ctrl.email" placeholder="email"></p>
+                    <!-- JS because of IE support; better: placeholder="Username" -->
+                    <p><span><md-icon md-menu-origin class="material-icons redish">lock_outline</md-icon></span><input required type="password" type="password" name="pasword" ng-model="$ctrl.password" placeholder="Password">
+                        <!-- JS because of IE support; better: placeholder="Password" -->
+                        <p><button id="buttonlogin" type="button" ng-click="$ctrl.login()" ng-disabled="projectForm.$invalid" class="btn btn-primary btn-lg">Log In</button></p>
+                </fieldset>
+            </form>
+            <p>Not a member? <a ui-sref="auth.register" class="blue">Sign up now</a><span class="fontawesome-arrow-right"></span></p>
+        </div>
+    </div>
+</div>
+<!--<div ng-controller="LoginController" layout="column" ng-cloak id="outPopUp">
+
+  <md-content layout-padding>
+    <form name="projectForm">
+
+    
+
+      <div layout="row">
+        <md-input-container flex="50">
+          <label>User Name</label>
+          <input required name="username" ng-model="$ctrl.username">
+          <div ng-messages="projectForm.username.$error">
+            <div ng-message="required">This is required.</div>
+          </div>
+        </md-input-container>
+
+      
+      </div>
+       <div layout="row">
+        <md-input-container flex="50">
+          <label>Password</label>
+          <input required type="password" name="pasword" ng-model="$ctrl.password">
+          <div ng-messages="projectForm.password.$error">
+            <div ng-message="required">This is required.</div>
+          </div>
+        </md-input-container>
+
+      
+      </div>
+
+      <div>
+        <md-button type="submit" ng-click="$ctrl.login()" ng-disabled="projectForm.$invalid">Submit</md-button>
+      </div>
+ <a ui-sref="auth.register">Don't have an account? Register here ?</a>
+     
+    </form>
+  </md-content>
+
+</div>-->
+
+
+
+<!--
+
+<h1>Login page</h1>
+<div class="container">
+  <form name="loginForm">
+    <div>
+      <div class="">
+       
+            <input type="text" name="username" required class="form-control" ng-model="$ctrl.username" placeholder="username">
+      </div>
+
+    
+    <div>
+        <input type="password" name="password" ng-model="$ctrl.password" placeholder="password"
+          ng-minlenght="4" ng-maxlenght="8" required
+        >
+    </div>
+    <div>
+        <button ng-click="$ctrl.login()" ng-disabled="loginForm.$invalid">Login</button>
+    </div>
+  </form>
+  <a ui-sref="auth.register">Don't have an account? Register here ?</a>
+</div>
+</div>-->

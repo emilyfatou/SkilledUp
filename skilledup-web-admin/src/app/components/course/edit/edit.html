@@ -1,0 +1,29 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Edit course</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <form name="userEditForm">
+        <div class="form-group">
+
+            <label for="userName">Course Code</label>
+            <input type="text" class="form-control" id="userId" placeholder="Your Course Code" ng-model="$ctrl.course.course_code">
+        </div>
+        <div class="form-group">
+            <label for="userEmail">Course Title</label>
+            <input type="text" class="form-control" id="userFirstName" placeholder="Your Course Title" ng-model="$ctrl.course.course_title">
+        </div>
+        <div class="form-group">
+            <label for="userName">Description</label>
+            <input type="text" class="form-control" id="userLastName" placeholder="Your Description" ng-model="$ctrl.course.description">
+        </div>
+        <div class="form-group">
+            <label for="userAge">Syllabus</label>
+            <input type="text" class="form-control" id="userAge" placeholder="Your Syllabus" ng-model="$ctrl.course.syllabus">
+        </div>
+        
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()" ng-disabled="userEditForm.$invalid">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>

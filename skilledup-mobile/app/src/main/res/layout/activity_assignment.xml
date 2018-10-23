@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:id="@+id/upload_file"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:text="Upload your files"
+            android:layout_weight=".6"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/submit_file"
+            android:layout_width="0dp"
+            android:text="submit"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/drawbale_welcome_btn"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

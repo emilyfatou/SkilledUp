@@ -1,0 +1,51 @@
+
+ <div class="col-lg-12 main-chart">
+    <h1 class="page-title">course list</h1>
+      <div class="panel-body">
+            <div id="infosuccess" hidden>
+              <span class="label label-success"> Successfully</span>
+             </div>
+             <div id="infofail" hidden>
+             <span class="label label-warning"> Please Fill Out The Form Again!!!</span>
+             </div>
+              <md-button class="md-fab md-mini" aria-label="Eat cake" ng-click="$ctrl.createCourse('md')">
+           <md-icon md-menu-origin class="material-icons">add_circle</md-icon>
+            </md-button>
+            <!--<button class="glyphicon glyphicon-plus" ng-click="$ctrl.createCourse('md')"></button>-->
+                <div class="table-responsive">
+                  <table class="table table-striped" datatable="ng">
+                    <span us-spinner="{radius:20, width:8, length:8}"></span>
+
+                      <thead>
+                        <tr>
+    
+                          <td>Course Code</td>
+                          <td>Course Title</td>
+                          <td>Description</td>
+                          <td>Syllabus</td>
+                          
+                          <td>Options</td>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="course in $ctrl.courses">
+                          <td>{{course.course_code}}</td>
+                          <td>{{course.course_title}}</td>
+                          <td>{{course.description}}</td>
+                          <td>{{course.syllabus}}</td>
+         
+                          <td>
+                              <button class="btn btn-info glyphicon glyphicon-eye-open" ng-click="$ctrl.view('md',course)"></button>
+                              <button class="btn btn-primary glyphicon glyphicon-edit" ng-click="$ctrl.edit('md',course)"></button>
+                              <button class="btn btn-danger glyphicon glyphicon-trash" ng-click="$ctrl.delete('md',course)"></button>
+                          </td>
+                        </tr>
+                        
+                      </tbody>
+
+                </table>
+            </div>
+       </div>
+</div>
+

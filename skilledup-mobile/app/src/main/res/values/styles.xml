@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/toolbarMar</item>
+        <item name="colorPrimaryDark">@color/ColorBlueMar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.FullScreen" >
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="NavyBtn" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">#020e39</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="dashboar_text" parent="AlertDialog.AppCompat.Light">
+        <item name="android:textColor">#0021D9</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="drawer_menu_item" parent="AlertDialog.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:background">@drawable/drawer_menu_selector</item>
+
+    </style>
+
+    <style name="divider">
+        <item name="android:background"> @color/colorDarkGrey </item>
+        <item name="android:layout_width"> match_parent</item>
+        <item name="android:layout_height"> 1dp </item>
+    </style>
+
+    <style name="my_course_list">
+
+    </style>
+</resources>

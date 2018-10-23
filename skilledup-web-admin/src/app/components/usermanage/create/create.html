@@ -1,0 +1,66 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Create User</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <form name="userCreateForm">
+         <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username" ng-model="$ctrl.user_name">
+        </div>    
+        <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="password" class="form-control" placeholder="Password" ng-model="$ctrl.password">
+        </div> 
+        <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Group" ng-model="$ctrl.realem">
+        </div> 
+        <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="First Name" ng-model="$ctrl.first_name">
+        </div> 
+        <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Last Name" ng-model="$ctrl.last_name">
+        </div>    
+        <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Email" ng-model="$ctrl.email">
+        </div>  
+        <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Select City" ng-model="$ctrl.city">
+        </div>  
+        <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Select Country" ng-model="$ctrl.country">
+        </div>
+        <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Mobile Number" ng-model="$ctrl.mobile">
+        </div> 
+        <div class="form-group input-group">
+             <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Mobile Number" ng-model="$ctrl.mobile">
+        </div> 
+         <div class="form-group">
+            <label>Gender</label>
+                <select class="form-control" ng-model="$ctrl.gender">
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                </select>
+         </div>
+         <div class="form-group">
+            <label>User Type</label>
+                <select class="form-control" ng-model="$ctrl.user_type">
+                      <option value="staff">Staff</option>
+                      <option value="customer">Customer</option>
+                </select>
+         </div>
+  
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>

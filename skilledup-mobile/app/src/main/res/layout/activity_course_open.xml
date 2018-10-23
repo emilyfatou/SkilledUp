@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#eaeaf8"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_course_toolbar"
+        android:background="@color/toolbarMar">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/ima_back_add_course"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:text="Course Detail"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#8f8fff"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/opened_course_title"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:text="This tis title"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img_avater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/ic_launcher"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avater"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:layout_below="@+id/img_avater"/>
+            <TextView
+                android:id="@+id/opened_course_code"
+                android:layout_below="@+id/opened_course_title"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="36dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/ic_add_circle_black_24dp"
+                android:layout_weight=".3"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/opened_course_desc"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/ic_add_circle_black_24dp"
+                android:layout_weight=".3"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/opened_course_duration"
+                android:text="@string/about"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/ic_add_circle_black_24dp"
+                android:layout_weight=".3"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/opened_course_Syllebus"
+                android:text="@string/about"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_course"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Add course"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/drawbale_welcome_btn" />
+
+</LinearLayout>

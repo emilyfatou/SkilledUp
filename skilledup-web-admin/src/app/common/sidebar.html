@@ -1,0 +1,39 @@
+<!--<script src="assets/common-scripts.js"></script>-->
+
+<aside>
+    <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+           <p class="centered">
+                <a href="profile.html"><img src="assets/img/ui-sherman.jpg" class="img-circle" width="60"></a>
+            </p>
+            <h5 class="centered">{{$ctrl.userv.user.email}}</h5>
+
+            <li class="sub-menu">
+                <a class="active" ui-sref="dashboard">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            
+             
+            <li class="sub-menu">
+                <a ui-sref="assignment">
+                    <i class="fa fa-user"></i>
+                    <span>Manage Assignments</span>
+                </a>
+
+            </li>
+            
+            <li class="sub-menu">
+                <a ui-sref="course">
+                    <i class="fa fa-user"></i>
+                    <span>Manage Courses</span>
+                </a>
+
+            </li>
+
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorUpMar">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_launcher"
+            android:background="@drawable/drawble_logo_image_background"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Habtamu Fentaw"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="8dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/profile_image"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/menu_my_course"
+        style="@style/drawer_menu_item"
+        android:text="My Courses"/>
+    <TextView
+        android:id="@+id/menu_item_all_course"
+        style="@style/drawer_menu_item"
+        android:text="All Courses"/>
+    <TextView
+        android:id="@+id/menu_item_search_course"
+        style="@style/drawer_menu_item"
+        android:text="Search Course"/>
+
+    <View
+        style="@style/divider"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/menu_item_profile"
+        style="@style/drawer_menu_item"
+        android:text="Profile"/>
+
+    <TextView
+        android:id="@+id/menu_item_forum"
+        style="@style/drawer_menu_item"
+        android:text="Join Forums"/>
+
+    <View
+        style="@style/divider"/>
+
+    <TextView
+        android:id="@+id/menu_item_about"
+        style="@style/drawer_menu_item"
+        android:text="About"/>
+    <TextView
+        android:id="@+id/menu_item_feedback"
+        style="@style/drawer_menu_item"
+        android:text="Feedback" />
+    <TextView
+        android:id="@+id/menu_item_log_out"
+        style="@style/drawer_menu_item"
+        android:text="Log out"/>
+
+</LinearLayout>

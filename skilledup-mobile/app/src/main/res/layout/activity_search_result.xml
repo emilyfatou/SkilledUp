@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_result_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarMar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/ima_back_search_result"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+            android:layout_marginRight="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Search Course"/>
+
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search result . . . ."/>
+    <ListView
+
+        android:id="@+id/search_result_list"
+        android:background="@drawable/list_view"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:dividerHeight="2dp"
+        android:elevation="4dp"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

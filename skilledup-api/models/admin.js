@@ -1,0 +1,18 @@
+//load module dependencies
+var mongoose=require('mongoose');
+var paginator=require('mongoose-paginate');
+
+var Schema=mongoose.Schema;
+
+//define admin schema attributes
+var AdminSchema=new Schema({
+    profile:{type:Schema.Types.ObjectId,ref:'Profile'},
+    },{
+    timestamps:{createdAt:'created_at',updatedAt:'updated_at'}
+});
+
+//pagination
+    AdminSchema.plugin(paginator);
+
+//export admin module
+module.exports=mongoose.model('Admin',AdminSchema);

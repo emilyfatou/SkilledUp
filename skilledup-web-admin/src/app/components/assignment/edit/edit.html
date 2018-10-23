@@ -1,0 +1,31 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Edit assignment</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <form name="userEditForm">
+        <div class="form-group">
+            <label for="userName">Content</label>
+            <input type="text" class="form-control" id="userId" placeholder="Fill Exam Content" ng-model="$ctrl.assignment.content" required>
+        </div>
+        <div class="form-group">
+            <label for="userEmail">Due Date</label>
+            <input type="text" class="form-control" id="userFirstName" placeholder="Fill Exam Due Date" ng-model="$ctrl.assignment.due_date" required>
+        </div>
+        <div class="form-group">
+            <label for="userName">status</label>
+            <input type="text" class="form-control" id="userLastName" placeholder="Fill Exam status" ng-model="$ctrl.assignment.status" required>
+        </div>
+        <div class="form-group">
+            <label for="userAge">Title</label>
+            <input type="text" class="form-control" id="userAge" placeholder="Fill Exam Title" ng-model="$ctrl.assignment.title" required>
+        </div>
+        <div class="form-group">
+            <label for="userAge">Total Marks</label>
+            <input type="text" class="form-control" id="userAge" placeholder="Fill Exam Marks" ng-model="$ctrl.assignment.total_marks" required>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()" ng-disabled="userEditForm.$invalid">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>

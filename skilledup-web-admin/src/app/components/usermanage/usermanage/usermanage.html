@@ -1,0 +1,46 @@
+
+ <div class="col-lg-12 main-chart">
+    <h1 class="page-title">Users list</h1>
+      <div class="panel-body">
+         <span us-spinner="{radius:30, width:8, length: 16}"></span>
+            <button class="glyphicon glyphicon-plus" ng-click="$ctrl.createUser('md')"></button>
+                <div class="table-responsive">
+                  <table class="table table-striped" datatable="ng">
+
+                      <thead>
+                        <tr>
+    
+                          <td>Name</td>
+                          <td>Email</td>
+                          <td>Age</td>
+                          <td>Options</td>
+                          <td>Name</td>
+                          <td>Options</td>
+                          <td>Name</td>
+                          <td>Options</td>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="user in $ctrl.users">
+                          <td>{{user._id}}</td>
+                          <td>{{user.updated_at}}</td>
+                          <td>{{user.created_at}}</td>
+                          <td>{{user.email}}</td>
+                          <td>{{user.staus}}</td>
+                          <td>{{user.role}}</td>
+                          <td>{{user.realm}}</td>
+                          <td>
+                              <button class="btn btn-info glyphicon glyphicon-eye-open" ng-click="$ctrl.view('md',user)"></button>
+                              <button class="btn btn-primary glyphicon glyphicon-edit" ng-click="$ctrl.edit('md',user)"></button>
+                              <button class="btn btn-danger glyphicon glyphicon-trash" ng-click="$ctrl.delete('md',user)"></button>
+                          </td>
+                        </tr>
+                        
+                      </tbody>
+
+                </table>
+            </div>
+       </div>
+</div>
+
